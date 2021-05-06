@@ -25,6 +25,6 @@ class Post extends Model
 
     //relacion uno a uno polimorfica
     public function image(){
-        return $this->morphOne(Tag::class,'imageable');
+        return $this->morphOne(Image::class,'imageable');
     }
 }
