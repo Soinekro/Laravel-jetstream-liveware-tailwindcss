@@ -7,7 +7,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tag extends Model
 {
+    public $fillable=[
+        'name',
+        'slug',
+        'color',
+
+    ];
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
     use HasFactory;
+
+
 
     //relacion muchos a muchos
 
