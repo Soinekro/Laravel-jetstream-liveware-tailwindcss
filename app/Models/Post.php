@@ -7,6 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
+    protected $guarded =[
+        'id',
+        'created_at',
+        'updated_at',
+    ];
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
     use HasFactory;
 
     //relacion 1 muchos inversa
