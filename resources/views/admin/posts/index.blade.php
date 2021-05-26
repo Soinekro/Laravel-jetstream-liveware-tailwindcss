@@ -3,6 +3,7 @@
 @section('title','Blog Chumacero')
 
 @section('content_header')
+<a href="{{route('admin.posts.create')}}" class="btn btn-warning btn-sm float-right"> Crear nuevo Post</a>
     <h1>Editar Post</h1>
 @stop
 
@@ -13,7 +14,7 @@
     </div>
 
 @endif
-<a href="{{route('admin.posts.create')}}" class="btn btn-danger btn-sm"> Crear nuevo Post</a>
+
     @livewire('admin.post-index')
 @stop
 @section('js')
