@@ -235,9 +235,14 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'dashboard',
-            'url'         => 'admin',
+            'text'        => 'Dashboard',
+            'route'         => 'admin.home',
             'icon'        => 'fas fa-tachometer-alt fa-w',
+        ],
+        [
+            'text'        => 'Usuarios',
+            'route'         => 'admin.users.index',
+            'icon'        => 'fas fa-users fa-w',
         ],
         ['header' => 'Administrador'],
         [
